@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+    .topnav-mobile {
+        display: block;
+        height: 50px;
+        border-bottom: 1px solid #808080;
+        box-shadow: 40 40px solid #808080;
+    }
+    .topnav-desktop {
+        display: none;
+    }
+    .topnav-mobile .logo {
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .topnav-mobile {
+        display: none;
+    }
+}

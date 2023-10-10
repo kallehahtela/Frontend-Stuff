@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Nav</title>
+</head>
+<body>
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+
+    <!-- Top Mobile Navigation Menu -->
+    <div class="topnav-mobile">
+    <a class="logo" href="#home" class="active">KH</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="onToggle()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <!-- Top Desktop Navigation Menu -->
+    <div class="topnav-desktop">
+        <a class="logo" href="#home" class="active">KH</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="hamburger-toggle" href="javascript:void(0);" class="icon" onclick="onToggle()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
