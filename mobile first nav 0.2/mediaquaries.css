@@ -1,0 +1,62 @@
+@media screen and (max-width: 375px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-link-a {
+        font-size: 1.25rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 390px) {
+    .logo {
+       font-size: 1.5rem;
+    }
+
+    .menu-link-a {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .logo {
+       font-size: 2rem;
+    }
+
+    .menu-link-a {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+       font-size: 2rem;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .desktop-menu-links {
+        position: relative;
+        left: -350px;
+        display: flex;
+        list-style: none;
+    }
+
+    .desk-menu-link-a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.25rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .desk-menu-link-a:hover {
+        color: #c213a5;
+    }
+
+
+}

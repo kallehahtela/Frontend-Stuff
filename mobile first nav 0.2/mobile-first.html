@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+
+    <!-- Mobile navigation with the hamburger button -->
+    <nav id="mobile-nav">
+        <div class="logo">KH23</div>
+        <div class="mobile-navigation">
+            <div class="hamburger-icon" onclick="openOnToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="desktop-menu-links">
+                <li><a class="desk-menu-link-a" href="#">About</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="#">Website Development</a>
+                        <a href="#">Updating Websites</a>
+                        <a href="#">Hosting & Maintaining</a>
+                      </div>
+                </div>
+                <li><a class="desk-menu-link-a" href="#">Pricing</a></li>
+                <li><a class="desk-menu-link-a" href="#">Team</a></li>
+                <li><a class="desk-menu-link-a" href="#">Contact</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="mobile-menu-links">
+        <li><a class="menu-link-a" href="#" onclick="openOnToggle()">About</a></li>
+        <li><a class="menu-link-a" href="#" onclick="openOnToggle()">Services</a></li>
+        <li><a class="menu-link-a" href="#" onclick="openOnToggle()">Pricing</a></li>
+        <li><a class="menu-link-a" href="#" onclick="openOnToggle()">Team</a></li>
+        <li><a class="menu-link-a" href="#" onclick="openOnToggle()">Contact</a></li>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
