@@ -1,0 +1,103 @@
+/* CUSTOMS FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.topnav {
+    height: 10vh;
+    overflow: hidden;
+    border-bottom: 1px solid #cacaca;
+}
+
+.topnav h1 {
+    display: inline-flex;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    font-size: 2.5rem;
+    color: #f81d9d;
+}
+
+.topnav a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    position: relative;
+    top: 17px;
+    left: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.topnav a.active {
+    color: red;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #f81d9d;
+}
+
+.topnav input[type=text] {
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 1rem;
+    height: 30px;
+    position: relative;
+    top: -20px;
+}
+
+.darkmode {
+    position: absolute;
+    right: 650px;
+    top: 35px;
+    width: 40px;
+}
+
+.darkmode:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode a{
+    color: #fff;
+}
+
+.dark-mode .user-info a {
+    color: #fff;
+}
+
+.user-info {
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+
+.user-info .login {
+    text-decoration: none;
+    text-underline-offset: 5px;
+    color: #000;
+    position: relative;
+    top: 30px;
+    font-size: 1.25rem;
+    padding-left: 20px;
+}
+
+.user-info .login:hover {
+    text-decoration: underline;
+    text-decoration-color: #f81d9d;
+}
