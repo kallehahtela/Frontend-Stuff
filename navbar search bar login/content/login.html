@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupare</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <!-- Desktop Setup -->
+        <div class="topnav">
+            <a class="logo" href="/index.html"><h1 >Occupare</h1></a>
+            <a class="link active" href="/content/explore.html">Explore</a>
+            <a class="link" href="/content/occupare-pro.html">Occupare Pro</a>
+            <a class="link" href="/content/about-us.html">About Us</a>
+            <input class="text-box" type="text" name="text" placeholder="Search...">
+            <img onclick="darkModeToggle()" class="darkmode" href="#" src="/assets/half-moon.png" alt="dark mode icon">
+        </div>
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="user-info">
+            <a class="login" href="/content/login.html">Login</a>
+            <a class="login" href="/content/register.html">Register</a>
+        </div>
+    </nav>
+
+    <form action="GET" class="login-form">
+        <input required type="text" placeholder="username"><br><br>
+        <input required type="password" placeholder="password"><br><br>
+    </form>
+
+    <a href="/content/login.html" class="hero-call-to-act-login">Login</a>
+    <a href="/content/register.html" class="hero-call-to-act-register">Register</a>
+
+    <script src="/script.js"></script>
+</body>
+</html>

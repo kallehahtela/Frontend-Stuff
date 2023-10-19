@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar Navbar</title>
+    <title>Occupare</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquaries.css">
 </head>
 <body>
-    <!-- Desktop Setup -->
-    <div class="topnav">
-        <h1 class="logo">Occupare</h1>
-        <a class="link" href="#home" onclick="changeActiveNavLink()">Explore</a>
-        <a class="link" href="#about-us" onclick="changeActiveNavLink()">Advertise</a>
-        <a class="link" href="#contact" onclick="changeActiveNavLink()">Enhance</a>
-        <a class="link" href="#contact" onclick="changeActiveNavLink()">Notify</a>
-        <input class="text-box" type="text" placeholder="Search...">
-        <img onclick="darkModeToggle()" class="darkmode" href="#" src="./assets/half-moon.png" alt="dark mode icon">
+    <nav>
+        <!-- Desktop Setup -->
+        <div class="topnav">
+            <a href="/index.html"><h1 class="logo">Occupare</h1></a>
+            <a class="link" href="./content/explore.html">Explore</a>
+            <a class="link" href="/content/occupare-pro.html">Occupare Pro</a>
+            <a class="link" href="/content/about-us.html">About Us</a>
+            <input class="text-box" type="text" name="text" placeholder="Search...">
+            <img onclick="darkModeToggle()" class="darkmode" href="#" src="./assets/half-moon.png" alt="dark mode icon">
+        </div>
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="user-info">
+            <a class="login" href="./content/login.html">Login</a>
+            <a class="login" href="#">Register</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1 class="section-title">"Don't Wait! <br> Rise Up and Seize Your <br> Opportunities"</h1>
+        <h2 class="section-by">Kalle Hahtela - Founder & CEO of Occupare</h2>
+        <a href="./content/explore.html" class="hero-call-to-act">Act now</a>
+        <img src="./assets/window.png" alt="" class="hero-img">
     </div>
-    <div class="hamburger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="user-info">
-        <a class="login" href="#">Login</a>
-        <a class="login" href="#">Register</a>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

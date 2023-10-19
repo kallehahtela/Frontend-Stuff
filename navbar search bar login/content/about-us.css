@@ -120,77 +120,70 @@
     text-decoration-color: #f81d9d;
 }
 
-/* HERO SECTION */
-/* LIGHT MODE */
-.hero-section {
-    display: flex;
-    overflow: hidden;
+.faq-h1 {
+    position: absolute;
+    top: 200px;
+    left: 700px;
 }
 
-.hero-section img {
-    position: absolute;
-    right: 200px;
-    top: 300px;
-}
-
-.hero-section .section-title {
-    color: #000;
-    position: absolute;
-    left: 200px;
-    top: 300px;
-    font-size: 5rem;
-    text-shadow: 5px 5px #f81d9d;
-}
-
-.hero-section .section-by {
-    color: #000;
-    position: absolute;
-    left: 240px;
-    top: 680px;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
     font-size: 1rem;
-}
-
-.hero-section .hero-call-to-act {
-    color: #000;
-    border: 1px solid #000;
-    position: absolute;
-    left: 240px;
-    top: 780px;
-    font-size: 1.5rem;
-    padding: 20px;
-    width: 200px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    color: #f81d9d;
-    background-color: #fff;   
-    font-weight: 600; 
-    transition: all 0.3s ease;
-}
-
-.hero-section .hero-call-to-act:hover {
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
-    background-color: #f81d9d;
+    padding: 20px;
+    width: 900px;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+    left: 500px;
+    top: 200px;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #cacaca;
     color: #fff;
-    transform: scale(1.1);
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 5px 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;  
+    position: relative;
+    left: 500px;
+    top: 200px;
+    width: 862px;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* DARK MODE */
-.dark-mode .hero-section .section-title {
+.dark-mode .accordion {
     color: #fff;
-}
-
-.dark-mode .hero-section .section-by {
-    color: #fff;
-}
-
-.dark-mode .hero-section .hero-call-to-act {
-    color: #f81d9d;
     background-color: #000;
     border: 1px solid #fff;
 }
 
-.dark-mode .hero-section .hero-call-to-act:hover {
-    background-color: #f81d9d;
-    color: #fff;
+.dark-mode .panel {
+    background-color: #000;
+}
+
+.dark-mode .active, .accordion:hover {
+    background-color: #5e5e5e;
 }

@@ -120,42 +120,35 @@
     text-decoration-color: #f81d9d;
 }
 
-/* HERO SECTION */
-/* LIGHT MODE */
-.hero-section {
-    display: flex;
-    overflow: hidden;
+.login-form {
+    width: 700px;
+    height: 300px;
+    border: 5px solid #f81d9d;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    padding: 20px;
+    text-align: center;
 }
 
-.hero-section img {
-    position: absolute;
-    right: 200px;
-    top: 300px;
-}
-
-.hero-section .section-title {
-    color: #000;
-    position: absolute;
-    left: 200px;
-    top: 300px;
-    font-size: 5rem;
-    text-shadow: 5px 5px #f81d9d;
-}
-
-.hero-section .section-by {
-    color: #000;
-    position: absolute;
-    left: 240px;
-    top: 680px;
+.login-form input {
     font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+    position: relative;
+    top: 80px;
 }
 
-.hero-section .hero-call-to-act {
+.login-form ::placeholder {
+    color: #000;
+}
+
+.hero-call-to-act-login{
     color: #000;
     border: 1px solid #000;
     position: absolute;
-    left: 240px;
-    top: 780px;
+    left: 620px;
+    top: 450px;
     font-size: 1.5rem;
     padding: 20px;
     width: 200px;
@@ -168,7 +161,25 @@
     transition: all 0.3s ease;
 }
 
-.hero-section .hero-call-to-act:hover {
+.hero-call-to-act-register {
+    color: #000;
+    border: 1px solid #000;
+    position: absolute;
+    left: 920px;
+    top: 450px;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 200px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #f81d9d;
+    background-color: #fff;   
+    font-weight: 600; 
+    transition: all 0.3s ease;
+}
+
+.hero-call-to-act-login:hover, .hero-call-to-act-register:hover {
     cursor: pointer;
     background-color: #f81d9d;
     color: #fff;
@@ -176,21 +187,13 @@
 }
 
 /* DARK MODE */
-.dark-mode .hero-section .section-title {
-    color: #fff;
-}
-
-.dark-mode .hero-section .section-by {
-    color: #fff;
-}
-
-.dark-mode .hero-section .hero-call-to-act {
+.dark-mode .hero-call-to-act {
     color: #f81d9d;
     background-color: #000;
     border: 1px solid #fff;
 }
 
-.dark-mode .hero-section .hero-call-to-act:hover {
+.dark-mode .hero-call-to-act:hover {
     background-color: #f81d9d;
     color: #fff;
 }
